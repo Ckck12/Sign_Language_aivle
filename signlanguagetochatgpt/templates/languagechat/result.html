@@ -1,14 +1,26 @@
 {% load static %}
-<link rel="stylesheet" href="{% static 'languagechat/chat_style.css' %}">
+<link rel="stylesheet" href="{% static 'signtochatgptresult.css' %}" />
+
 <div class="one-box">
-<form action="chat" method="post" entype="application/x-www-form-urlencoded">
+  <form action="chat" method="post" entype="application/x-www-form-urlencoded">
     {% csrf_token %}
-    <div id="file-module-0">
+    <textarea id="question" name="question">{{question}}</textarea>
+    <div class="response-container">
+      <div class="sender">
+        <img
+          width="16px"
+          height="16px"
+          src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/openai-icon.svg"
+          alt="chatgpt icon"
+        />
+        <label>ChatGPT</label>
+      </div>
+      <div class="gpt-response">
+        <span id="result">{{result}}</span>
+      </div>
+      <div id="file-module-0">
         <label>chatgtp에게 요청하기</label>
-        <textarea id="question" name="question">{{question}}</textarea>
+      </div>
     </div>
-    <div>
-      <label>응답</label>
-      <span id="result">{{result}}</span>
-  </div>
-</form>
+  </form>
+</div>

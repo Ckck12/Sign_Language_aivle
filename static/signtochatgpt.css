@@ -1,1 +1,168 @@
 @import 'styles.css';
+
+
+.form--container{
+  margin:0 auto;
+  width: 70%;
+  padding: 40px;
+  display: flex;
+  justify-content: end;
+}
+
+form{
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  width: 300px;
+  height: 80px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #999999;
+  border-radius: 15px;
+}
+
+.text-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  padding: 0 auto;
+}
+
+.file-name {
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px;
+  vertical-align: middle;
+  border: 1px solid #dddddd;
+  width: 78%;
+  color: #999999;
+}
+
+.text-box > label {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  background-color: #999999;
+  cursor: pointer;
+  height: 20px;
+  transition: transform .1s;
+}
+
+.text-box > label:hover{
+  color:#fff;
+  background-color: #74AA9C;
+  transform: scale(1.05)
+}
+
+
+input {
+  border: none;
+  background: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+input:hover{
+  outline: none;
+}
+
+
+input[type="file"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+.empty {
+  border: 1px solid red;
+}
+
+.btn-row {
+  height: 160px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-row > button {
+  border: 0;
+  width: 322px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #74AA9C;
+  transition: transform .5s;
+}
+.btn-row > :first-child {
+  background-color: transparent;
+}
+
+
+.btn-row > :first-child:hover {
+  color: #fff;
+  background-color: #74AA9C;
+  transform: scale(1.05)
+}
+
+
+.gpt-submit{
+  font-size: 20px;
+  color: white;
+  background-color: #74AA9C;
+  padding: 0 auto;
+  display: flex;
+  text-align: center;
+  line-height: 0;
+  align-items: center;
+  justify-content: center;
+  transition: transform 2.2s;
+}
+.gpt-submit > img{
+  margin-right: 10px;
+}
+
+
+.gpt-submit:hover{
+  animation: color_breath 4.125s alternate ease-out infinite;
+  transform: scale(1.2);
+}
+
+.gpt-submit:hover img {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes color_breath {
+  0% {
+    background-color: #74AA9C;
+    color : white;
+  }
+  50% {
+    background-color: white;
+    color: black;
+  }
+  100% {
+    background-color: #74AA9C;
+    color: white;
+  }
+}
