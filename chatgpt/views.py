@@ -2,7 +2,7 @@ from django.shortcuts import render
 import openai
 # Create your views here.
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 #chatGPT에게 채팅 요청 API
@@ -18,7 +18,7 @@ def chatGPT(prompt):
 #chatGPT에게 그림 요청 API
 def imageGPT(prompt):
     response = openai.Image.create(
-        prompt=prompt,
+        prompt=prompt, 
         n=1,
         size="256x256"
     )

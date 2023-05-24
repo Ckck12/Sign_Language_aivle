@@ -1,34 +1,91 @@
-<!doctype html>
-<html>
-    <head>
-        <title>ChatGPT 수월</title>
-        {% load static %}
-        <meta charset="utf-8">
-        <link rel='stylesheet' type="text/css" href="{% static 'index.css' %}"
-    </head>
-    <body>
-<div></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  {% load static %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'index.css' %}" />
+  <title>ChatGPT 수월</title>
+</head>
+<!--
+  <body>
+    <div>
 
 
-        <div>
-            <section class="title_section">
-                <h1 class="title_name"><a href="/">수월</a></h1>
-            </section>
+        <section class="play_button_section">
+            <a href="/chatgpt/">
+                <img src="/static/img/gpt.png">
+                <p>ChatGpt 질문</p>
+            </a>
 
-            <section class="play_button_section">
-                <a href="/chatgpt/">
-                    <img src="/static/img/gpt.png">
-                    <p>ChatGpt 질문</p>
-                </a>
+            <a href="/signlanguagetochatgpt/">
+                <img src="/static/img/sign.jpg">
+                <p>수월-ChatGPT 사용</p>
+            </a>
+        </section>     
+    </div>
+ -->
 
-                <a href="/signlanguagetochatgpt/">
-                    <img src="/static/img/sign.jpg">
-                    <p>수월-ChatGPT 사용</p>
-                </a>
-            </section>
+ <section class="title_section">
+  <h1 class="title_name"><a href="/">수월</a></h1>
+</section>
 
-            
+    <section class="new_play_button_section">
+        <div class="new-button-container">
+          <div class="new-toggle-btn">
+            <a href="/chatgpt/">
+              <input type="new-checkbox" />
+              <span class="new-btn"></span>
+              <span class="new-label">
+                <img
+                      height="120px"
+                      width="120px"
+                      src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/openai-icon.svg"
+                      alt="대체 텍스트"
+                  />
+              </span>
+            </a>
+        </div>
+        <div class="btn-explain">ChatGPT 사용</div>
+
+      
         </div>
 
+        <div class="new-button-container-2">
+          <div class="new-toggle-btn-2">
+            <a href="/signlanguagetochatgpt/">
+              <input type="new-checkbox-2" />
+              <span class="new-btn-2"></span>
+              <span class="new-label-2">
+                <img
+                    height="120px"
+                    width="120px"
+                    src="https://cdn.icon-icons.com/icons2/2622/PNG/512/aria_sign_language_icon_159037.png"
+                    alt="대체 텍스트"
+                />
+              </span>
+            </a>
+        </div>
+        <div class="btn-explain">수월 - ChatGPT 사용</div>
+
+
+        </div>
+        
+      </section>
+
+
+
+
+      <!-- <div class="item-row">
+        <div>ChatGPT 사용</div>
+        <div>수월 - ChatGPT 사용</div>
+      </div> -->
+
+</body>
+</html>
+
+
+
     
-    </body>

@@ -8,6 +8,11 @@
   width: 100%;
 } */
 
+.global-title-section{
+  margin-top: 57px;
+}
+
+
 .form--container{
   margin:0 auto;
   width: 70%;
@@ -19,6 +24,7 @@
 form{
   width: 100%;
 }
+
 
 .container {
   display: flex;
