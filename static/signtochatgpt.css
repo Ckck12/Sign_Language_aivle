@@ -1,5 +1,12 @@
 @import 'styles.css';
 
+/* .title_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+} */
 
 .form--container{
   margin:0 auto;

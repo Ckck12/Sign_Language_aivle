@@ -162,3 +162,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.global_title_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+}

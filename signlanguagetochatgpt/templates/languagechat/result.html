@@ -1,6 +1,10 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'signtochatgptresult.css' %}" />
 
+<section class="global_title_section">
+  <h1 class="title_name"><a href="/">수월</a></h1>
+</section>
+
 <div class="one-box">
   <form action="chat" method="post" entype="application/x-www-form-urlencoded">
     {% csrf_token %}

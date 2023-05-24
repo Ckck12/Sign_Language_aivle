@@ -2,13 +2,28 @@
 {% block extrahead %}
 <link rel="stylesheet" href="{% static 'chatgpt.css' %}">
 {% endblock %}
-<form action="chat" method="post" entype="application/x-www-form-urlencoded">
-    {% csrf_token %}
-    <div id="file-module-0">
-        <img src="static/img/gpt.png" alt="logo" id="logo">
-        <label>Chat GPT</label>
-        <textarea id="question" name="question" placeholder="ChatGPT에게 요청하기"></textarea>
-    </div>
-    <div><button id="text-button" type="submit" >질문</button></div>
-</form>
 
+<body>
+
+    <section class="global_title_section">
+        <h1 class="title_name"><a href="/">수월</a></h1>
+    </section>
+
+    <div class="title_section">
+        <img width="60px" height="60px" src="	https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/openai-icon.svg">
+        <h1 class="title">ChatGPT</h1>
+    </div>
+   
+    <form class="chat_form" action="chat" method="post" entype="application/x-www-form-urlencoded">
+        <div class="chat_form_container"> {% csrf_token %}
+            <div class="file_module_0">
+                <img src="/static/img/gpt.png" alt="logo" id="logo">
+                <textarea id="question" name="question" placeholder="ChatGPT에게 요청하기"></textarea>
+            </div>
+            <div>
+                <button id="text-button" type="submit" >질문</button>
+            </div>
+        </div> 
+    </form>
+
+</body>

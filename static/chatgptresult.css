@@ -1,1 +1,61 @@
 @import 'styles.css';
+
+.title_section {
+    text-align: center;
+    margin: 10% 0 10% 0;
+    font-size: 50px;
+}
+
+.image {
+    border-radius: 6px;
+}
+
+.title{
+    display: inline;
+    border-radius: 6px;
+    margin: 10% 10% 10% 10%;
+}
+
+.chat_form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+
+.chat_form_container{
+    border: 2.5px solid #74AA9C;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 2%;
+
+}
+
+#question {
+    width: 288px;
+    height: 175px;
+    margin: 2px;
+}
+
+.answer_section{
+    padding: 5% 0;
+}
+
+.answer_title{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#text-button{
+    background-color: #74AA9C; /* 배경색을 빨간색으로 설정 */
+    color: white; /* 글자색을 하얀색으로 설정 */
+    padding: 10px 20px; /* 패딩 값을 원하는 크기로 설정 */
+    border-radius: 10px; /* 테두리를 둥글게 설정 */
+    cursor: pointer; /* 커서를 포인터로 변경 */
+    border-color: white;
+}

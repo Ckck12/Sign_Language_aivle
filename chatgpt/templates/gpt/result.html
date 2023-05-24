@@ -1,16 +1,43 @@
 {% load static %}
 {% block extrahead %}
-<link rel="stylesheet" href="{% static 'gtp/style.css' %}">
+<link rel="stylesheet" href="{% static 'chatgptresult.css' %}" />
 {% endblock %}
-<form action="chat" method="post" entype="application/x-www-form-urlencoded">
-    {% csrf_token %}
-    <div id="file-module-0">
-        <label>chatgtp에게 요청하기</label>
-        <textarea id="question" name="question">{{question}}</textarea>
-    </div>
+
+
+<body>
+
+    <section class="global_title_section">
+        <h1 class="title_name"><a href="/">수월</a></h1>
+    </section>
+
     <div>
-      <label>응답</label>
-      <span id="result">{{result}}</span>
-  </div>
-    <div><button id="text-button" type="submit" >질문</button></div>
-</form>
+
+        <div class="title_section">
+            <h1 class="title">Chat GPT 답변</h1>
+        </div>
+
+    <form class="chat_form" action="chat" method="post" entype="application/x-www-form-urlencoded">
+        {% csrf_token %}
+        <div class="chat_form_container">
+        <div id="file-module-0">
+            <img class="image" src="/static/img/gpt.png" alt="logo" id="logo">
+            <textarea id="question" name="question">{{question}}</textarea>
+        </div>
+
+        <div class="answer_section">
+            <label class="answer_title">응답:</label>
+            <span id="result">{{result}}</span>
+        </div>
+
+        <div>
+            <button id="text-button" type="submit" >질문</button>
+        </div>
+
+
+
+        <div>
+    </form>
+
+
+    </div>
+</body>
